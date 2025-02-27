@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Style for the normal image */
+#normal-image-1 {
+    width: 300px; /* Sets the width of the image */
+    height: 200px; /* Sets the height of the image */
+    margin: auto; /* Centers the image horizontally */
+}
+
+/* Style for the rotated image */
+#rotation-image-1 {
+    width: 300px; /* Sets the width of the image */
+    height: 200px; /* Sets the height of the image */
+    transform: rotate(30deg); /* Rotates the image 30 degrees */
+    margin: 60px; /* Adds margin around the image */
+}
+
+/* Style for the scaled image */
+#scaling-image-1 {
+    width: 300px; /* Sets the width of the image */
+    height: 200px; /* Sets the height of the image */
+    transform: scale(0.65, 0.65); /* Scales the image by 65% */
+}
+
+/* Style for the translated image */
+#translation-image-1 {
+    width: 300px; /* Sets the width of the image */
+    height: 200px; /* Sets the height of the image */
+    margin: 80px; /* Adds margin around the image */
+    transform: translate(15px, -40px); /* Moves the image 15px to the right and 40px up */
+}
+
+/* Common style for all image containers */
+.normal-image, .rotation-image, .scaling-image, .translation-image {
+    display: inline-block; /* Displays the containers inline */
+    margin: auto; /* Centers the containers horizontally */
+    text-align: center; /* Centers the text within the containers */
+}
+</style>
+<title>Rotation, Scaling, and Translation</title>
+</head>
+<body>
+<div class="images">
+    <!-- Container for the normal image -->
+    <div class="normal-image">
+        <h2>Normal Image</h2>
+        <img src="https://banner2.cleanpng.com/20240310/eyp/transparent-stack-of-books-colorful-stack-of-books-varying-1710844075042.webp " id="normal-image-1" alt="book" />
+    </div>
+    <!-- Container for the rotated image -->
+    <div class="rotation-image">
+        <h2>Rotation Image</h2>
+        <h3>Rotation at 30 degrees</h3>
+        <img src="https://banner2.cleanpng.com/20240310/eyp/transparent-stack-of-books-colorful-stack-of-books-varying-1710844075042.webp" id="rotation-image-1" alt="book" />
+    </div>
+    <!-- Container for the scaled image -->
+    <div class="scaling-image">
+        <h2>Scaling Image</h2>
+        <h3>Scaling of 0.65 and 0.65</h3>
+        <img src="https://banner2.cleanpng.com/20240310/eyp/transparent-stack-of-books-colorful-stack-of-books-varying-1710844075042.webp" id="scaling-image-1" alt="book" />
+    </div>
+    <!-- Container for the translated image -->
+    <div class="translation-image">
+        <h2>Translation Image</h2>
+        <img src="https://banner2.cleanpng.com/20240310/eyp/transparent-stack-of-books-colorful-stack-of-books-varying-1710844075042.webp" id="translation-image-1" alt="book" />
+    </div>
+</div>
+</body>
+</html>

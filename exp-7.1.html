@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table with borders and collapsed borders</title>
+<style>
+/* Style for table cells */
+td {
+    text-align: center; /* Centers the text within each cell */
+    border: 1px solid black; /* Adds a solid black border to each cell */
+    padding: 10px; /* Adds padding inside the cells */
+    width: 20%; /* Sets the width of each cell to 20% of the table */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Sets the font family for the cell text */
+}
+
+/* Style for table headers */
+th {
+    text-align: center; /* Centers the text within each header cell */
+    border: 1px solid black; /* Adds a solid black border to each header cell */
+    padding: 10px; /* Adds padding inside the header cells */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font family for the header text */
+    color: black; /* Sets the text color for the header */
+}
+
+/* Style for the table */
+table {
+    border-collapse: collapse; /* Collapses the table borders to avoid double lines */
+    border: 2px solid black; /* Adds a solid black border around the table */
+    width: 40%; /* Sets the width of the table to 40% of its container */
+    background: #34495e; /* Sets the background color of the table */
+    color: darkorange; /* Sets the text color of the table */
+}
+
+/* Style for odd rows of the table */
+tr:nth-of-type(odd) {
+    background-color: lightcyan; /* Sets the background color for odd rows */
+}
+</style>
+</head>
+<body>
+<table>
+<tr>
+    <!-- Header row for the table -->
+    <th>Name</th>
+    <th>Profession</th>
+    <th>Experience</th>
+    <th>Age</th>
+</tr>
+<tr>
+    <!-- Data row 1 -->
+    <td><b>Viral Maheta</b></td>
+    <td>Embedded Engineer</td>
+    <td>4 years</td>
+    <td>25</td>
+</tr>
+<tr>
+    <!-- Data row 2 -->
+    <td><b>Ramesh Amin</b></td>
+    <td>System Analyst</td>
+    <td>6 years</td>
+    <td>27</td>
+</tr>
+<tr>
+    <!-- Data row 3 with colspan -->
+    <td><b>Rahul </b></td>
+    <td colspan="2"><b>Still to be finalized!</b></td> <!-- Merges two cells in this row -->
+    <td><b>50</b></td>
+</tr>
+<tr>
+    <!-- Data row 4 -->
+    <td><b>Shriakant Patel</b></td>
+    <td>PHP Programmer</td>
+    <td>9 years</td>
+    <td>30</td>
+</tr>
+<tr>
+    <!-- Footer row spanning all columns -->
+    <td colspan="4">
+    <b>*Information is subjected to individual capabilities and public domain. !</b>
+    </td>
+</tr>
+</table>
+</body>
+</html>
